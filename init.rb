@@ -3,11 +3,12 @@ require 'redmine'
 
 Redmine::Plugin.register :redmine_wiki_fast_history do
   name 'Redmine Wiki Fast History plugin'
-  author 'Author name'
-  description 'This is a plugin for Redmine'
-  version '0.0.1'
-  url 'http://example.com/path/to/plugin'
-  author_url 'http://example.com/about'
+  author 'Alex Sinelnikov'
+  description 'Plugin that provide you with fast navigation between wiki pages history'
+  version '1.0.0'
+  url 'https://github.com/Gera-IT/redmine_wiki_fast_history'
+  author_url 'https://github.com/avdept'
+  settings :default => {'enabled_fast_history' => true}, :partial => 'settings/history_setting'
 end
 
 class AssetViewsLayoutsHook < Redmine::Hook::ViewListener
