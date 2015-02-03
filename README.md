@@ -1,3 +1,10 @@
-= redmine_wiki_fast_history
+# Redmine wiki fast history
+Simple plugin for wiki page diff navigation
 
-Description goes here
+## Description
+This plugins adds all wiki page history to sidebar and gives ability to view different versions and compare them without page reload, which decrease time you need to check something
+
+## Screenshots
+
+![Imgur](http://i.imgur.com/Ti0iCtk.png)
+
