@@ -23,5 +23,11 @@
 </p>
 
 <div class="text-diff">
-<%= simple_format_without_paragraph @diff.to_html %>
+  <% if Setting["text_formatting"] == "Imperavi Redactor"%>
+
+      <%= (simple_format_without_paragraph @diff.to_html).gsub('&lt;', '<').gsub('&gt;', '>').html_safe%>
+      <% else %>
+      <%= simple_format_without_paragraph @diff.to_html%>
+      <% end %>
+
 </div>
